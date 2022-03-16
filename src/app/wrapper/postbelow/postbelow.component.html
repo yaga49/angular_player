@@ -1,0 +1,17 @@
+
+<div class="progress_bar"  (click)="setProgress($event)">
+
+
+  <div style="{{funcStyle()}}" class="progress"></div>
+</div>
+<div class="blockFix">
+
+  <div class="btn_block" >
+    <div class="btn_left" > <img src="../../assets/imgRight.png" class="btn_left" (click)="prevSong()"></div>
+    <div class="btn_PlayPause" > <img src="../../assets/imgPlayPause.png" class="btn_PlayPause" (click)="playAudio()"  ></div>
+    <div class="btn_right"> <img src="../../assets/imgRight.png" class="btn_right" (click)="nextSong()"></div>
+
+  </div>
+</div>
+
+

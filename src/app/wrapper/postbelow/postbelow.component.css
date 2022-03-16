@@ -1,0 +1,63 @@
+.blockFix{
+  width: 1506px;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  border: 2px solid ;
+  background: red;
+  box-sizing: border-box;
+
+}
+.btn_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+
+
+}
+
+.btn_left{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-right: 10px;
+  transform: rotate(90deg);
+  cursor: pointer;
+
+
+}
+.btn_PlayPause{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.btn_right{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-left: 5px;
+  cursor: pointer;
+
+}
+
+.progress_bar{
+  width: 900px;
+  margin-bottom: 75px;
+  height: 15px;
+  background: #9a9c9a;
+  position: fixed;
+  bottom: 0;
+  border: 2px solid ;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.progress{
+  background: #6a6a6a;
+  height: 11px;
+
+}
+

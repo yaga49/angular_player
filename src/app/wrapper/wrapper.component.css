@@ -1,0 +1,16 @@
+.container{
+
+  width: 100%;
+  background: #bfb9bf;
+  height: 850px;
+
+}
+
+.content{
+  background-image: url("https://w-dog.ru/wallpapers/6/12/494724163095576/2011-muzyka-kish-korol-i-shut-xorror-pank-folk-pank-pank-rok.jpg");
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background-size: cover;
+
+}
