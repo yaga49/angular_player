@@ -1,25 +1,30 @@
+.blockContent{
+  margin-top: 14px;
+  background: #6a6a6a;
+  opacity: 60%;
+}
 .blockFix{
-  width: 1506px;
-  height: 75px;
-  position: fixed;
-  bottom: 0;
+  width: 1450px;
+  height: 60px;
+
+  bottom: 3px;
   border: 2px solid ;
-  background: red;
+  background: #575252;
   box-sizing: border-box;
+  opacity: 70%;
 
 }
 .btn_block{
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 75px;
-
+  height: 58px;
+  margin-left: 20px;
 
 }
 
 .btn_left{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-size: cover;
   margin-right: 10px;
   transform: rotate(90deg);
@@ -28,15 +33,15 @@
 
 }
 .btn_PlayPause{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-size: cover;
   cursor: pointer;
 }
 
 .btn_right{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-size: cover;
   margin-left: 5px;
   cursor: pointer;
@@ -44,11 +49,11 @@
 }
 
 .progress_bar{
-  width: 900px;
-  margin-bottom: 75px;
-  height: 15px;
+  width: 1450px;
+
+  height: 10px;
   background: #9a9c9a;
-  position: fixed;
+
   bottom: 0;
   border: 2px solid ;
   box-sizing: border-box;
@@ -57,7 +62,89 @@
 
 .progress{
   background: #6a6a6a;
-  height: 11px;
+  height: 6px;
 
 }
 
+.audio{
+  width: 100%;
+  margin: auto;
+  height: 260px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+  width: 1px; /* ширина нового скроллбара */
+}
+.audioSong{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.block_audio{
+  cursor: pointer;
+  width: 100%;
+
+  height: 60px;
+  margin-top: 5px;
+  border-bottom: 2px #524f4f solid;
+  display: flex;
+  transition-property: border;
+
+
+}
+.block_audio:hover{
+  border: 2px yellow solid;
+}
+.btn_background{
+
+  width: 60px;
+  height: 100%;
+  border-right: 1px solid;
+  background-size: 60px 100%;
+  background-image: url("https://26.img.avito.st/avatar/social/256x256/8392399326.jpg") ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.btn_play{
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  cursor: pointer;
+
+}
+
+
+.btn_background{
+
+  width: 60px;
+  height: 100%;
+  border-right: 1px solid;
+  background-size: 60px 100%;
+  background-image: url("https://26.img.avito.st/avatar/social/256x256/8392399326.jpg") ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.btn_play{
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  cursor: pointer;
+
+}
+.blockPlayPause{
+
+}
+
+.NamesGroupSongs{
+  font-weight: bold;
+  margin: auto;
+  margin-left: 10px;
+}

@@ -1,0 +1,18 @@
+.content{
+  height: 45%;
+
+  display: flex;
+  align-items: center;
+
+
+}
+.images{
+  width: 250px;
+  height: 250px;
+  border: 3px #d9bfbf solid;
+  border-radius: 50%;
+  margin-left: 75px;
+}
+.block_text{
+
+}

@@ -1,17 +1,32 @@
+<div class="blockContent">
+  <div class="audio">
+    <div *ngFor="let song of songsList; let i = index">
+      <div class="block_audio" (click)="playAudio(song.UrlSrc, song.songIndex)">
+        <div class="btn_background" style="background-image: url({{song.UrlImage}}) ">
+          <div class="btn_play"><img src="../../assets/imgPlayPause.png" class="btn_play"></div>
+        </div>
+        <div class="NamesGroupSongs">
+          <div>{{song.groupName}}</div>
+          <div style="color: antiquewhite">{{song.SongName}}</div>
+        </div>
 
-<div class="progress_bar"  (click)="setProgress($event)">
+      </div>
+    </div>
+  </div>
+  <div class="blockPlayPause">
+    <div class="progress_bar" (click)="setProgress($event)">
+      <div style="{{funcStyle()}}" class="progress"></div>
+    </div>
+    <div class="blockFix">
 
+      <div class="btn_block">
+        <div class="btn_left"><img src="../../assets/imgRight.png" class="btn_left" (click)="prevSong()"></div>
+        <div class="btn_PlayPause"><img src="../../assets/imgPlayPause.png" class="btn_PlayPause" (click)="playAudio()">
+        </div>
+        <div class="btn_right"><img src="../../assets/imgRight.png" class="btn_right" (click)="nextSong()"></div>
 
-  <div style="{{funcStyle()}}" class="progress"></div>
-</div>
-<div class="blockFix">
-
-  <div class="btn_block" >
-    <div class="btn_left" > <img src="../../assets/imgRight.png" class="btn_left" (click)="prevSong()"></div>
-    <div class="btn_PlayPause" > <img src="../../assets/imgPlayPause.png" class="btn_PlayPause" (click)="playAudio()"  ></div>
-    <div class="btn_right"> <img src="../../assets/imgRight.png" class="btn_right" (click)="nextSong()"></div>
-
+      </div>
+    </div>
   </div>
 </div>
-
 
