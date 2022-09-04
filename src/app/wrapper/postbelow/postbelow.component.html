@@ -1,6 +1,6 @@
 <div class="blockContent">
   <div class="audio">
-    <div *ngFor="let song of songsList; let i = index">
+    <div *ngFor="let song of audioList; let i = index">
       <div class="block_audio" (click)="playAudio(song.UrlSrc, song.songIndex)"  >
         <div class="btn_background" style="background-image: url({{song.UrlImage}})">
           <div class="btn_play"><img src="../../assets/imgPlayPause.png" class="btn_play"></div>
