@@ -1,6 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {group} from "@angular/animations";
 import {getLocaleFirstDayOfWeek} from "@angular/common";
+import {ServiceService} from "../../service/service.service";
 
 @Component({
   selector: 'app-postbelow',
@@ -11,6 +12,9 @@ export class PostbelowComponent {
 
   ngOnInit(){
     this.upDateProgress()
+  }
+  constructor(private svc: ServiceService) {
+    
   }
 
   songsList: any = [
@@ -36,11 +40,11 @@ export class PostbelowComponent {
       UrlSrc: "../../assets/song1.mp3"
     },
     {
-      groupName: "Ryan Star",
-      SongName: "Start a Fire",
-      UrlImage: "https://avatars.yandex.net/get-music-content/97284/8f544d63.a.4669818-1/m1000x1000",
+      groupName: "Zico Chain",
+      SongName: "Mercury Gift",
+      UrlImage: "https://altwall.net/img/albums/eabd6b8099edf88ffabad7d49cb94b5c_2012.jpg",
       songIndex: 3,
-      UrlSrc: "../../assets/song1.mp3"
+      UrlSrc: "../../assets/song4.mp3"
     },
     {
       groupName: "Ryan Star",

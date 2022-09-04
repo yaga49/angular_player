@@ -7,6 +7,7 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { PostbelowComponent } from './wrapper/postbelow/postbelow.component';
 import { ContentComponent } from './wrapper/content/content.component';
 import { HeaderComponent } from './wrapper/header/header.component';
+import {ServiceService} from "./service/service.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { HeaderComponent } from './wrapper/header/header.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

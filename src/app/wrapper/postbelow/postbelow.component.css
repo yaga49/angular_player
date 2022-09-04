@@ -148,3 +148,7 @@
   margin: auto;
   margin-left: 10px;
 }
+
+.border_active{
+  border: 2px yellow solid;
+}
